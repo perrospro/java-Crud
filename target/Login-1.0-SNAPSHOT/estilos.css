@@ -1,0 +1,33 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 11 feb. 2022, 16:15:08
+    Author     : Usuario
+*/
+.card{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-color: black;
+  border: 10;
+  opacity: 1.0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img/login.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+  border-color: black;
+  border: 10px;
+    
+}
+.btn btn-rounded btn-success mt-2{
+    background-color: black;
+    position: absolute;
+  top:80%;
+  left: 50%;
+}
