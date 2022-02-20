@@ -1,4 +1,4 @@
-Controller\LoginController.class
-DAO\LoginDAO.class
 DB\ConnectionDB.class
 Model\UsuarioModel.class
+Controller\LoginController.class
+DAO\LoginDAO.class

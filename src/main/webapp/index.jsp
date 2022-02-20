@@ -47,7 +47,7 @@
                        <input type="password" name="txtPass"  placeholder="Ingrese la contraseña" class="form-control mt-2" required>
                         <input type="submit" class="btn btn-rounded btn-success mt-2" name="btnLogin" value="Ingresar">
                         <p style="color: red;"><%//=rsp%></p>
-                        <a href="crear_user.jsp"> crear usuario</a>
+                        <a href="UsuarioController?accion=listar"> crear usuario</a>
                     </div>
                 </div>
 

@@ -12,7 +12,7 @@ public class ConnectionDB {
     Connection connect = null;
 
     public static String user = "postgres";
-    public static String password = "593638aql";
+    public static String password = "593638sql";
     public static String db = "Mecanica_Automotriz";
     public static String ip = "localhost";
     public static String port = "5432";
