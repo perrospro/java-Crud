@@ -3,7 +3,9 @@ C:\Users\Georgie\Documents\NetBeansProjects\java-Crud\src\main\java\Controller\U
 C:\Users\Georgie\Documents\NetBeansProjects\java-Crud\src\main\java\Model\Persona.java
 C:\Users\Georgie\Documents\NetBeansProjects\java-Crud\src\main\java\Interfaces\CRUD.java
 C:\Users\Georgie\Documents\NetBeansProjects\java-Crud\src\main\java\Model\usuario.java
+C:\Users\Georgie\Documents\NetBeansProjects\java-Crud\src\main\java\Controller\PersonaController.java
 C:\Users\Georgie\Documents\NetBeansProjects\java-Crud\src\main\java\DB\ConnectionDB.java
+C:\Users\Georgie\Documents\NetBeansProjects\java-Crud\src\main\java\DAO\PersonaDAO.java
 C:\Users\Georgie\Documents\NetBeansProjects\java-Crud\src\main\java\Controller\LoginController.java
 C:\Users\Georgie\Documents\NetBeansProjects\java-Crud\src\main\java\DAO\LoginDAO.java
 C:\Users\Georgie\Documents\NetBeansProjects\java-Crud\src\main\java\Model\UsuarioModel.java

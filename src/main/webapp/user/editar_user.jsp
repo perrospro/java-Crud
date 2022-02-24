@@ -1,11 +1,11 @@
-<%-- 
-    Document   : editar_user
-    Created on : 20 feb. 2022, 10:29:31
-    Author     : Georgie
---%>
 
 <%@page import="Model.usuario"%>
+<%@page import="Model.Persona"%>
 <%@page import="DAO.UsuarioDAO"%>
+<%@page import="DAO.PersonaDAO"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.List"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,12 +17,12 @@
     </head>
     <body>
         <div class="container">
-            <% 
-                UsuarioDAO usDAO = new UsuarioDAO();
-                int id = Integer.parseInt((String)request.getAttribute("idusr"));
-                usuario usu = (usuario)usDAO.list(id);
-                
-            
+            <%
+                UsuarioDAO usDAO = new UsuarioDAO();                
+                int id = Integer.parseInt((String) request.getAttribute("idusr"));
+                usuario usu = (usuario) usDAO.list(id);
+
+
             %>
             <form action="UsuarioController">
                 <input class="form-control" type="hidden"  name="txtId" value="<%= usu.getId_usuario()%>">
@@ -32,11 +32,19 @@
                 </div>
                 <div class="form-group">
                     <label for="email">Persona</label>
-                    <select class="form-control" name="cboPersona" >
-                        <option value="1">oliver rodriguez</option>
-                        <option value="2">gerardo lopez</option>
-                        <option value="3">michelle pascal</option>
-                    </select>
+                        <select class="form-control" name="cboPersona">
+                            <% 
+                                PersonaDAO psDAO = new PersonaDAO();
+                                List<Persona>list =psDAO.listPersona();
+                                Iterator<Persona>iter = list.iterator();
+                                Persona ps= null;
+                                while (iter.hasNext()) {
+                                        ps=iter.next();                                        
+                                    
+                            %>
+                                <option value="<%=ps.getId_persona()%>"><%=ps.getNombre()%></option>
+                            <%}%>
+                        </select>
                 </div>
                 <div class="form-group">
                     <label for="email">Tipo Ocupacion</label>
